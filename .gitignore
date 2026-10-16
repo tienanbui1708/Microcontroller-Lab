@@ -1,0 +1,20 @@
+# STM32CubeIDE build output: keep only the .hex files, the Proteus
+# schematics load them (e.g. Lab4/Proteus -> ../LAB4/Debug/LAB4.hex)
+**/Debug/*
+!**/Debug/*.hex
+**/Release/
+.metadata/
+
+# Proteus backups, per-user UI state and generated files
+Project Backups/
+*.pdsbak
+*.workspace
+*.hex.asm
+
+# Logs and host test builds
+*.log
+tests/build/
+
+# Archives and videos: attach them to a GitHub Release instead
+*.zip
+*.mp4
